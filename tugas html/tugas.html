@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rcldo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+    body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("waroeng.jpg");
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"></span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">SEBLAK BAGHDAD</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white"></span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">SEBLAK</span></h5>
+    <p>Seblak adalah makanan khas Indonesia yang berasal dari Bandung, Jawa Barat. Seblak terkenal dengan rasa pedas, gurih, dan sedikit asam, yang terbuat dari kerupuk yang dimasak dengan bumbu dan kuah yang kaya rasa.</p>
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>Seblak sangat populer sebagai makanan ringan atau camilan, terutama di kalangan anak muda. Rasanya yang pedas dan segar membuatnya jadi favorit banyak orang, dan bisa ditemukan di warung-warung kaki lima atau restoran. Apakah kamu sudah pernah mencicipi seblak?</i></p>
+    
+    </div>
+    <img src="seblak.webp" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Opening hours:</strong> everyday from 9am to 10pm.</p>
+    <p><strong>Address:</strong> BAGHDAD</p>
+
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Drink</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>mie goreng</h5>
+      <p class="w3-text-grey">mie pedes doer mie yang langsung dari japan</p><br>
+    
+      <h5>nasi goreng</h5>
+      <p class="w3-text-grey">nasi yang di goreng beserta bumbu bumbu tertentu seperti daging dan sayur sayuran langsung dari swis</p><br>
+    
+      <h5>piscok</h5>
+      <p class="w3-text-grey">pisang coklat </p><br>
+    
+      <h5>bakwan</h5>
+      <p class="w3-text-grey">adonan yang di campur campur dengan sayur lalu di goreng rasanya wenak tenan</p><br>
+    
+      <h5>ayam ricis</h5>
+      <p class="w3-text-grey">ayam yang di sausi dengan saus ricis</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">minuman coklat yang langsung dari belgia</p><br>
+    
+      <h5>tea jous</h5>
+      <p class="w3-text-grey">minuman segar dengan rasa yang luar biasa</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">minuman yang menyehatkan</p><br>
+    
+      <h5>aurbal</h5>
+      <p class="w3-text-grey">minuman soda yang paling cocok untuk beraktifitas</p>
+    </div>  
+    <img src="msg.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Dapatkan sekarang</span></h5>
+    <p>Temukan kami di beberapa alamat di beberapa tempat.</p>
+    <img src="https://bisnisbanten.com/wp-content/uploads/2022/12/WhatsApp-Image-2022-12-10-at-08.54.27-1.jpeg" class="w3-image" style="width:100%">
+    <p><span class="w3-tag">Info!</span> menerima pesanan untuk acara seperti pernikahan,party,khitanan,syukuran dll</p>
+    <p><strong>Bila anda berminat bisa hubungi</strong> 0812345678 atau bisa dm  @seblak_baghdad atau di bawah ini</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="berapa banyak" required name="berapa banyak"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2024-11-06T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="pesan" required name="pesan"></p>
+      <p><button class="w3-button w3-black" type="submit">PESAN SEKARANG</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>INI ADALAH SITUS RESMI KAMI </p>
+  <a class="w3-button w3-round-xxlarge w3-dark-grey w3-margin-bottom" href="https://www.instagram.com/rrcrdoo/profilecard/?igsh=M2c2c2RiY3F1enlo" target="_blank">instagram</a>
+ <!-- Footer end. -->
+ </footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
